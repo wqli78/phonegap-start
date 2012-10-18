@@ -22,17 +22,43 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.mobile-1.2.0.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>中医课堂-幼儿园</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">   
             <div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is Ready</p>
-            </div>
-        </div>
+                <p class="status pending blink">正在连接，请等待...</p>
+                <p class="status complete blink hide">连接成功！</p>
+            </div>  
+
+
+       <p style="font-size:2em">下面哪项不属于中医的四诊？</p> 
+       <p><a href="#two" data-role="button">望诊</a></p> 
+       <p><a href="#two" data-role="button">问诊</a></p> 
+       <p><a href="#two" data-role="button">号脉</a></p> 
+       <p><a href="#two" data-role="button">推算</a></p> 
+
+    </div><!-- /content -->
+    
+    <div data-role="footer">
+        <h4>中医课堂页脚</h4>
+    </div><!-- /footer -->
+    
+</div><!-- /page -->
+
+
+       
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
